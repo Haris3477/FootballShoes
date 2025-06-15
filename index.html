@@ -1,15 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Football Shoes Store</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
 <body>
   <h1>Welcome to the Football Shoes Store</h1>
   <p>Choose by gender, size, color, and features.</p>
 
+  <!-- 🔽 Filter Dropdowns -->
+  <div>
+    <label for="genderFilter">Gender:</label>
+    <select id="genderFilter">
+      <option value="all">All</option>
+      <option value="Men">Men</option>
+      <option value="Women">Women</option>
+      <option value="Unisex">Unisex</option>
+    </select>
+
+    <label for="sizeFilter">Size:</label>
+    <select id="sizeFilter">
+      <option value="all">All</option>
+      <option value="39">39</option>
+      <option value="42">42</option>
+      <option value="44">44</option>
+    </select>
+  </div>
+
+  <!-- 🧱 Product Grid -->
+  <div class="shoe-grid" id="shoeGrid">
+    <div class="shoe-card" data-gender="Men" data-size="42">
+      <img src="https://via.placeholder.com/200x150" alt="Shoe 1" />
+      <h3>Nike Phantom</h3>
+      <p>Men • Size 42 • Red</p>
+    </div>
+    <div class="shoe-card" data-gender="Women" data-size="39">
+      <img src="https://via.placeholder.com/200x150" alt="Shoe 2" />
+      <h3>Adidas Predator</h3>
+      <p>Women • Size 39 • Black</p>
+    </div>
+    <div class="shoe-card" data-gender="Unisex" data-size="44">
+      <img src="https://via.placeholder.com/200x150" alt="Shoe 3" />
+      <h3>Puma Future</h3>
+      <p>Unisex • Size 44 • Blue</p>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
-</html>
